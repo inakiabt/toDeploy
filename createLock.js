@@ -8,7 +8,7 @@ exports.handler = (event, context, callback) => {
                 S: event.userId
             },
             'timestamp': {
-                S: JSON.stringify(date)
+                S: JSON.stringify(Date.now())
             }
         },
         ReturnConsumedCapacity: 'TOTAL',
